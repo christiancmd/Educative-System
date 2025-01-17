@@ -6,16 +6,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--white-back);
+    background: linear-gradient(to bottom, var(--dark-blue) 50%, var(--clear-black) 70%), url(../img/index/background-white.jpg);
     line-height: 1.6;
 }
+
+
 
 :root {
     --white: #ffffff;
     --white-back: #f0f8ff;
-    --gray-blue: #4682b4;
+    --gray-blue: #2472b1;
+    --dark-blue: #031627;
     --clear-blue: #87ceeb;
     --clear-gray: #dbdada;
+    --black: #000000;
+    --clear-black: #0f0f0fcc;
 }
 
 header {

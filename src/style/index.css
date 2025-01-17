@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--white-back);
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 html {
@@ -18,6 +18,7 @@ html {
     --white: #ffffff;
     --white-back: #f0f8ff;
     --gray-blue: #2472b1;
+    --dark-blue: #031627;
     --clear-blue: #87ceeb;
     --clear-gray: #dbdada;
     --black: #000000;
@@ -50,22 +51,63 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
     padding: 60px 0 25px 0;
 }
 
+
 .topic {
+    position: relative;
     width: 250px;
     height: 350px;
     background-color: var(--clear-black);
     filter: blur(.1);
     border-radius: 15px;
-    transition: all 0.2s ease-in-out;
+    transition:
+        scale 0.2s ease-in-out,
+        background .3s ease-in;
+    color: var(--white);
+}
+
+
+#greetings:hover {
+    background: linear-gradient(to bottom, var(--black) 0%, var(--clear-black) 30%), url(../img/index/back-greetings.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#fruits:hover {
+    background: linear-gradient(to bottom, var(--black) 0%, var(--clear-black) 30%), url(../img/index/back-fruits.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#numbers:hover {
+    background: linear-gradient(to bottom, var(--black) 0%, var(--clear-black) 30%), url(../img/index/back-numbers.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#profession:hover {
+    background: linear-gradient(to bottom, var(--black) 0%, var(--clear-black) 30%), url(../img/index/back-profession.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .topic:hover {
     scale: 1.08;
-    background-color: var(--clear-gray);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.topic:hover .details-topic :is(h2, p) {
+    color: var(--white-back);
+}
+
+.topic:hover .details-topic :is(button) {
+    color: var(--black);
+    background: linear-gradient(to bottom, var(--gray-blue), var(--clear-blue));
 }
 
 .topic figure {
@@ -77,9 +119,58 @@ header {
     width: 50px;
 }
 
-footer {
-    background-color: var(--gray-blue);
+.topic .details-topic {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+
+}
+
+.topic .details-topic h2 {
+    font-size: clamp(1.6rem, 2.5vw, 1.9rem);
+    position: relative;
+    padding: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.topic .details-topic p {
+    font-size: clamp(.9rem, 2.5vw, 1rem);
+}
+
+
+.topic .details-topic button {
+    position: absolute;
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    bottom: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.topic .details-topic button:hover {
+    width: 165px;
+    height: 43px;
     color: var(--white);
+    background: var(--black);
+}
+
+/*
+.block-topic {
+    background-color: red;
+    width: 100%;
+    height: 200px;
+}
+*/
+
+footer {
+    background-color: var(--white-back);
+    color: var(--);
     text-align: center;
     padding: 10px 0;
     width: 100%;

@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section .box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section .box ol {
+    text-align: start;
+}
+
+@media (width > 900px) {
+    section .box ol {
+        display: flex;
+        gap: 45px;
+    }
+
+}

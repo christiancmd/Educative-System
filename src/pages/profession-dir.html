@@ -7,11 +7,11 @@
     <meta name="Author" content="Christian Parisca">
     <title>Página Educativa A1</title>
     <link rel="stylesheet" href="../style/home.css">
-    <script src="scripts.js" defer></script>
 </head>
 
 <body>
     <header>
+        <img id="return-img" src="../../public/return.svg" alt="">
         <h1>Aprende Inglés A1</h1>
     </header>
     <nav>
@@ -19,62 +19,91 @@
             <li><a href="#section1">Sección 1</a></li>
             <li><a href="#section2">Sección 2</a></li>
             <li><a href="#section3">Sección 3</a></li>
-            <li><a href="#section4">Sección 4</a></li>
-            <li><a href="#section5">Sección 5</a></li>
         </ul>
     </nav>
     <main>
+        <section id="section-principal">
+            <div class="text-box">
+                <h2>Vocabulario</h2>
+                <small>Importante para esta seccion</small>
+                <p>Los artículos indefinidos "a" y "an" en inglés son fundamentales y cumplen una función muy importante
+                    en la gramática y comunicación diaria. "a": Se usa delante de sustantivos que comienzan con un
+                    sonido consonántico. "an": Se usa delante de sustantivos que comienzan con un sonido vocálico.</p>
+                <ul>
+                    <p>Presente simple</p>
+                    <li>I am a teacher. (Soy profesor/a.)</li>
+                    <li>He found an old coin. (Él encontró una moneda antigua).</li>
+                    <li>We need a camera to take good photos. (Necesitamos una cámara para tomar buenas fotos).</li>
+                    <li>I have an apple and a cherry. (Yo tengo una manzana y una cereza)</li>
+                </ul>
+            </div>
+            <figure class="img-box">
+                <img src="../img/profession/a_an_articles.png" alt="">
+            </figure>
+
+        </section>
+
+        <section class="container-img">
+
+            <figure>
+                <img src="../img/index/back-profession.jpg" alt="">
+            </figure>
+        </section>
+
         <section id="section1">
             <h2>Sección 1: Presentaciones</h2>
             <p>Mucho texto aquí... Muchos párrafos para explicar cómo presentarse en inglés...</p>
             <div class="box">
-                <h3>Ejemplo de Presentación:</h3>
-                <p>Hello! My name is John. Nice to meet you!</p>
-                <p>Hi! I'm Mary. How are you?</p>
+                <h3>Ejemplo de Presentaciones:</h3>
+                <p>Hello! My name is John and I am a System Engineer.</p>
+                <p>Hi! I am an excellent Accountant.</p>
+                <p>My father is a good Police Officer</p>
             </div>
         </section>
         <section id="section2">
-            <h2>Sección 2: Saludos y Despedidas</h2>
+            <h2>Sección 2: Preguntas</h2>
             <p>Mucho texto aquí... Mucha información sobre cómo saludar y despedirse en inglés...</p>
             <div class="box">
-                <h3>Saludos comunes:</h3>
-                <p>Good morning! Good afternoon! Good evening!</p>
-                <h3>Despedidas comunes:</h3>
-                <p>Goodbye! See you later! Take care!</p>
+                <h3>Preguntas comunes generalizado:</h3>
+                <p>What do you do for a living? / What do yo do?.</p>
+                <h3>Preguntas comunes especificando:</h3>
+                <p>Hey micheal, are you an Enginner?.</p>
+                <p>Bro, Is your mom a Architect?.</p>
+                <p>My sister is a good Nurse.</p>
+
             </div>
         </section>
+
+        <section class="container-img">
+            <video autoplay=1 controls=1 muted=1 width="400px" height="400px" src="../media/ocupations.mp4"></video>
+        </section>
+
         <section id="section3">
-            <h2>Sección 3: Números y Colores</h2>
+            <h2>Sección 3: Respuestas</h2>
             <p>Mucho texto aquí... Descripciones detalladas de números y colores en inglés...</p>
             <div class="box">
-                <h3>Números:</h3>
-                <p>One, two, three, four, five, six, seven, eight, nine, ten...</p>
-                <h3>Colores:</h3>
-                <p>Red, blue, green, yellow, black, white, orange, purple...</p>
+                <h3>Respuestas comúnes y cortas</h3>
+                <p>Yes, I am / No, I am not</p>
+                <h3>Por ejemplo:</h3>
+                <p>Example: No, she is not an Architect.</p>
+                <p>Example: Yes, It is my dog.</p>
+                <p>Example: No, I am not a student.</p>
+                <p>Example: Yes, My dad is an Enginner.</p>
             </div>
         </section>
-        <section id="section4">
-            <h2>Sección 4: Días de la Semana</h2>
-            <p>Mucho texto aquí... Información sobre los días de la semana en inglés...</p>
-            <div class="box">
-                <h3>Días de la Semana:</h3>
-                <p>Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday...</p>
-            </div>
-        </section>
-        <section id="section5">
-            <h2>Sección 5: Comidas y Bebidas</h2>
-            <p>Mucho texto aquí... Descripciones detalladas de comidas y bebidas en inglés...</p>
-            <div class="box">
-                <h3>Comidas:</h3>
-                <p>Apple, banana, bread, cheese, chicken, egg...</p>
-                <h3>Bebidas:</h3>
-                <p>Water, milk, juice, coffee, tea, soda...</p>
-            </div>
+
+        <section id="section-quiz">
+            <h3>¿Preparado para hacer un Quiz?</h3>
+            <button type="submit" id="quiz-section">Comenzar</button>
         </section>
     </main>
-    <!-- <footer>
+    <footer>
         <p>&copy; 2025 Christian Parisca. Todos los derechos reservados.</p>
-    </footer> -->
+    </footer>
+
+
+    <script src="../app/returnHome.js"></script>
+    <script src="../app/directionSection.js"></script>
 </body>
 
 </html>

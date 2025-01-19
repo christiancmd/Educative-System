@@ -136,6 +136,8 @@ header {
     font-weight: bold;
 }
 
+
+
 .topic .details-topic p {
     font-size: clamp(.9rem, 2.5vw, 1rem);
 }

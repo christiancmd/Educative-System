@@ -10,7 +10,9 @@ body {
     line-height: 1.6;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --white: #ffffff;
@@ -18,7 +20,9 @@ body {
     --gray-blue: #2472b1;
     --dark-blue: #031627;
     --clear-blue: #87ceeb;
+    --blue-level: #90EBEE;
     --clear-gray: #dbdada;
+    --light-gray: rgb(181, 177, 177);
     --black: #000000;
     --clear-black: #0f0f0fcc;
 }
@@ -30,8 +34,20 @@ header {
     text-align: center;
 }
 
+header img {
+    position: absolute;
+    inset: 25px 0 0 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+header img:hover {
+    filter: drop-shadow(0 0 10px var(--white));
+}
+
 nav {
-    background-color: var(--clear-blue);
+    background-color: var(--white);
     padding: 10px 0;
 }
 
@@ -49,7 +65,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -78,26 +94,157 @@ section:hover {
     transform: scale(1.02);
 }
 
-h2 {
+
+section h2 {
     margin-top: 0;
     color: var(--gray-blue);
 }
 
-.box {
+section .box {
     border: 1px solid var(--gray-blue);
     padding: 10px;
     margin-top: 10px;
     background-color: var(--white-back);
 }
 
-footer {
-    background-color: var(--gray-blue);
+
+.container-img {
+    overflow: hidden;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-img figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img figure img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#section-principal {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section-principal .text-box {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+#section-principal.text-box h2 {
+    font-size: clamp(2.5rem, 2.5vw, 3rem);
+}
+
+#section-principal .text-box small {
+    position: relative;
+    font-size: clamp(.8rem, 2.5vw, 1rem);
+    color: var(--light-gray);
+    top: -10px;
+}
+
+#section-principal .text-box p {
+    font-size: clamp(.9rem, 2.5vw, 1.1rem);
+    text-align: start;
+    text-align: justify;
+}
+
+#section-principal .text-box ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 15px;
+}
+
+#section-principal .text-box ul p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: clamp(1.1rem, 2.5vw, 1rem);
+
+}
+
+#section-principal .img-box {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#section-principal .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#section-quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(to bottom, var(--gray-blue) 0%, var(--clear-black) 30%), url(../img/index/index-notice.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    max-width: 700px;
+    align-self: center;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    margin-bottom: 25px;
+}
+
+#section-quiz h3 {
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
     color: var(--white);
+}
+
+#section-quiz button {
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    bottom: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+#section-quiz button:hover {
+    width: 165px;
+    height: 43px;
+    color: var(--white);
+    background: var(--black);
+}
+
+
+
+footer {
+    background-color: var(--white-back);
+    color: var(--);
     text-align: center;
     padding: 10px 0;
-    position: absolute;
     width: 100%;
-    bottom: 0;
 }
 
 .animate {
@@ -127,5 +274,19 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media (width > 900px) {
+
+    /*----------------------------------Main:hero-----------------------------------*/
+
+    #section-principal {
+        flex-direction: row;
+    }
+
+    #section-principal .text-box {
+        padding: 0 35px;
     }
 }

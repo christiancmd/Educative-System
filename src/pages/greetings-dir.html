@@ -7,11 +7,12 @@
     <meta name="Author" content="Christian Parisca">
     <title>Página Educativa A1</title>
     <link rel="stylesheet" href="../style/home.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="../style/greetings.css">
 </head>
 
 <body>
     <header>
+        <img id="return-img" src="../../public/return.svg" alt="">
         <h1>Aprende Inglés A1</h1>
     </header>
     <nav>
@@ -20,22 +21,37 @@
             <li><a href="#section2">Sección 2</a></li>
             <li><a href="#section3">Sección 3</a></li>
             <li><a href="#section4">Sección 4</a></li>
-            <li><a href="#section5">Sección 5</a></li>
         </ul>
     </nav>
     <main>
-        <section id="section1">
-            <h2>Sección 1: Verb to be</h2>
-            <p>Mucho texto aquí... Muchos párrafos para explicar cómo presentarse en inglés...</p>
-            <div class="box">
-                <h3>Ser y estar:</h3>
-                <p>Hello! My name is John. Nice to meet you!</p>
-                <p>Hi! I'm Mary. How are you?</p>
-
+        <section id="section-principal">
+            <div class="text-box">
+                <h2>Vocabulario</h2>
+                <small>Importante para esta seccion</small>
+                <p>el verbo "to be" es una herramienta indispensable para comunicarte eficazmente en inglés. ¡Es el
+                    cimiento de muchas estructuras gramaticales y te ayudará a expresarte con claridad!. Se utiliza para
+                    hablar de identidad, características y estados.</p>
+                <ul>
+                    <p>Presente simple</p>
+                    <li>I am a teacher. (Soy profesor/a.)</li>
+                    <li>She is happy. (Ella está feliz.)</li>
+                    <li>They are friends. (Ellos son amigos.)</li>
+                    <li>He is my friend. (Él es mi amigo.)</li>
+                </ul>
             </div>
+            <figure class="img-box">
+                <img src="../img/greetings/inglestobeint-02_xl.png" alt="">
+            </figure>
         </section>
 
-        <section id="section2">
+        <section class="container-img">
+
+            <figure>
+                <img src="../img/greetings/example=greetings.webp" alt="">
+            </figure>
+        </section>
+
+        <section id="section1">
             <h2>Sección 1: Presentaciones</h2>
             <p>Mucho texto aquí... Muchos párrafos para explicar cómo presentarse en inglés...</p>
             <div class="box">
@@ -45,7 +61,7 @@
 
             </div>
         </section>
-        <section id="section3">
+        <section id="section2">
             <h2>Sección 2: Saludos y Despedidas</h2>
             <p>Mucho texto aquí... Mucha información sobre cómo saludar y despedirse en inglés...</p>
             <div class="box">
@@ -58,7 +74,7 @@
                 <p>Example: Goodbye. Have a great day.</p>
             </div>
         </section>
-        <section id="section4">
+        <section id="section3">
             <h2>Sección 3: Preguntas del Dia</h2>
             <p>Mucho texto aquí... Descripciones detalladas de números y colores en inglés...</p>
             <div class="box">
@@ -66,35 +82,41 @@
                 <p>How are you? / How's it going?</p>
                 <h3>Por ejemplo:</h3>
                 <p>Example: How are you? I'm fine, thanks. And you?</p>
+                <p>Example: How's it going? Not bad, And you?</p>
             </div>
         </section>
-        <section id="section5">
+
+        <section class="container-img">
+            <video autoplay=1 controls=1 muted=1 width="400px" height="400px" src="../media/greetings.mp4"></video>
+        </section>
+
+        <section id="section4">
             <h2>Sección 4: Respuestas cotidianas</h2>
             <p>Mucho texto aquí... Información sobre los días de la semana en inglés...</p>
             <div class="box">
                 <h3>Respuestas Cortas sobre estado</h3>
                 <p>Hello, I am fine / Hi, I am very well</p>
+                <p>Hi, He is fine / Hi, She is very good</p>
                 <h3>Respuestas Cortas de si o no</h3>
                 <p>Yes, I am / No, I am not</p>
+                <p>Yes, It is/ No, It is not</p>
             </div>
         </section>
-        <section id="section6">
-            <h2>Sección 5: Dar bienvenida o Desperdirse</h2>
-            <p>Mucho texto aquí... Descripciones detalladas de comidas y bebidas en inglés...</p>
-            <div class="box">
-                <h3>Bienvenidas:</h3>
-                <p>Welcome! / Nice to see you! / Glad you could come.</p>
-                <p>Example: Welcome! Make yourself at home.</p>
-                <h3>Despedidas:</h3>
-                <p>Goodbye. / See you later. / Take care.</p>
-                <p>Example: Goodbye. Have a great day.</p>
 
-            </div>
+
+        <section id="section-quiz">
+            <h3>¿Preparado para hacer un Quiz?</h3>
+            <button type="submit" id="quiz-section">Comenzar</button>
         </section>
     </main>
-    <!-- <footer>
+    <footer>
         <p>&copy; 2025 Christian Parisca. Todos los derechos reservados.</p>
-    </footer> -->
+    </footer>
+
+
+    <script src="../app/returnHome.js"></script>
+    <script src="../app/directionSection.js"></script>
+
 </body>
 
 </html>
